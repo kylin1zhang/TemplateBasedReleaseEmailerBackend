@@ -5,9 +5,10 @@ import com.emailer.service.EmailSenderService;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.scheduling.TaskScheduler;
+import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Service;
 
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMessage;
 
 @Service
 public class EmailSenderServiceImpl implements EmailSenderService {
